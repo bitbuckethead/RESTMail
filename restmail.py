@@ -175,7 +175,7 @@ inbox = Inbox()
 storage = StorageHandler()
 
 @inbox.collate
-def handle( to, sender, body ):
+def handle( to, sender, subject body ):
 	parser = email.parser.Parser()
 	mail = parser.parsestr( body )
 	message = {}
